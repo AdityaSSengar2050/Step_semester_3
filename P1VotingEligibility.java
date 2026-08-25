@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class P1VotingEligibility {
+
+    static void checkVotingEligibility(int age) {
+        boolean eligible = age >= 18;
+
+        if (eligible) {
+            System.out.println("Eligible to vote");
+        } else {
+            System.out.println("Not eligible to vote");
+        }
+    }
+
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter age: ");
+            int age = sc.nextInt();
+
+            checkVotingEligibility(age);
+        }
+    }
+}
