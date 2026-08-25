@@ -16,6 +16,7 @@ public class P6GradeClassifier {
             System.out.println("Grade: D");
         }
     }
+    
 
     public static void main(String[] args) {
 
